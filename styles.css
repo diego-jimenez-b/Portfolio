@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F8F7FD;
+}
+
+h1, h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  margin-top: 0;
+}
+h1 {
+  font-size: 45px;
+  margin-bottom: 0;
+}
+h2 {
+  width: 100%;
+  font-size: 30px;
+}
+
+.header {
+  margin: 0;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 3px 7px rgb(36, 36, 36);
+  z-index: 2;
+}
+.header > img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(65%);
+  object-fit: cover;
+}
+.header h1, .header h2 {
+  width: auto;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.938);
+}
+.header h1, .header h2 {
+  background-color: transparent;
+  color: white;
+}
+.header h2 {
+  font-size: 26.5px;
+  margin-top: 12px;
+}
+.header p {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 25px;
+  padding: 25px 35px;
+  width: 80%;
+  max-width: 850px;
+  margin: 32px auto 0;
+  line-height: 21px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.proyects {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 7px rgb(48, 48, 48);
+  background-color: #023047;
+  padding: 40px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.proyects > img {
+  position: absolute;
+  height: 80%;
+  width: 150%;
+  object-fit: cover;
+  transform: rotate(-10deg) translateY(150px);
+  bottom: 0;
+}
+.proyects h2 {
+  color: #ececec;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+.proyects > div {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 44%;
+  margin: 0 0 40px;
+  padding: 12px 12px 15px;
+  text-align: center;
+}
+.proyects > div img {
+  width: 100%;
+  border-radius: 5px;
+}
+.proyects p {
+  text-align: justify;
+  line-height: 20px;
+}
+.proyects a {
+  display: block;
+  font-weight: bold;
+  color: rgb(82, 219, 173);
+}
+.proyects a:hover {
+  color: rgb(67, 202, 157);
+}
+
+.abilities {
+  padding: 55px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.abilities h2 {
+  color: #22d89b;
+}
+.abilities ul {
+  border-radius: 10px;
+  padding: 0;
+  margin-left: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.abilities li { 
+  list-style-position: inside;
+  padding: 0;
+  width: 33%;
+  margin: 15px 0;
+  font-size: 17px;
+  position: relative;
+}
+.abilities ul span {
+  margin-bottom: 5px;
+  display: inline-block;
+} 
+.bar-percentage {
+  position: absolute;
+  right: 10%;
+}
+.bar {
+  width: 90%;
+  height: 9px;
+  border-radius: 20px;
+  box-shadow:  inset 2px 2px 4px rgb(55, 84, 170, 0.4), inset -2px -2px 4px white;;
+  overflow: hidden;
+}
+.fill-bar {
+  background-color: rgb(42, 214, 200);
+  width: 80%;
+  height: 100%;
+}
+li:nth-child(2n+1) .fill-bar {
+  background-color: rgb(255, 192, 55);
+}
+
+.footer {
+  background-color: #033b57;
+  color:  white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 30px 45px;
+}
+.footer h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer h3 {
+  width: 80%;
+  display: inline-block;
+}
+.footer div {
+  /* width: 33%; */
+  margin: 15px 0;
+}
+.footer div img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(300%) contrast(103%);
+  width: 20px;
+  margin: 0 5px -2px 0;
+}
+
+
+@media screen and (max-width: 900px) {
+  .proyects > div {
+    width: 80%;
+  }
+  .abilities li {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header h1 {
+    font-size: 35px;
+  }
+  .header h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .abilities li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer h3 {
+    width: auto;
+  }
+  .footer {
+    text-align: center;
+  }
+}

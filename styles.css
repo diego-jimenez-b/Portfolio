@@ -21,6 +21,9 @@ h2 {
   width: 100%;
   font-size: 30px;
 }
+img.back {
+  display: none;
+}
 
 .header {
   margin: 0;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -98,13 +100,18 @@ img.back {
   margin-left: 20px;
   margin-bottom: 35px;
 }
+.proyects h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  font-family: 'Fira sans', sans-serif ;
+}
 .proyects > div {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.911);
   position: relative;
   border-radius: 10px;
   width: 44%;
   margin: 0 0 40px;
-  padding: 12px 12px 15px;
+  padding: 9px 12px 15px;
   text-align: center;
 }
 .proyects > div img {
@@ -196,11 +203,16 @@ li:nth-child(2n+1) .fill-bar {
 }
 .footer div {
   margin: 15px 0;
+  width: 220px;
 }
 .footer div img {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(300%) contrast(103%);
   width: 20px;
   margin: 0 5px -2px 0;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -216,26 +228,32 @@ li:nth-child(2n+1) .fill-bar {
   }
 }
 @media screen and (max-width: 800px) {
-  .abilities li {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 800px) {
   .header h1 {
     font-size: 35px;
   }
   .header h2 {
     font-size: 24px;
   }
+  .header p {
+    font-size: 14px;
+  }
+  .abilities li {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 500px) {
+  .header p {
+    font-size: 13.5px;
+    padding: 12px;
+  }
+  .proyects h3 {
+    font-size: 23px;
+  }
   .abilities li {
     width: 100%;
   }
-}
-@media screen and (max-width: 470px) {
   .footer div {
     width: 100%;
     margin: 0 auto;
